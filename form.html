@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>A web-form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="image-container">
+			<div class="logo-container"></div>
+			<div class="credits">
+				Photo by
+				<a
+					href="https://unsplash.com/@teapowered?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Patrick Robert Doyle</a
+				>
+				on
+				<a
+					href="https://unsplash.com/photos/OvXht_wi5Ew?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Unsplash</a
+				>
+			</div>
+		</div>
+		<div class="main-container">
+			<div class="header">
+				<div>
+					This is not a real online service! You know you need something like
+					this in your life to help you realize your deepest dreams. Sign up
+					<em>now</em> to get started.
+				</div>
+				<div>You <em>know</em> you want to.</div>
+			</div>
+			<div class="form-container">
+				<h3>Let's do this !</h3>
+				<form action="" method="get">
+					<div class="row">
+						<div class="first-name">
+							<label for="first-name">FIRST NAME</label>
+							<input
+								type="text"
+								id="first-name"
+								name="first-name"
+								placeholder="Thor" />
+								</div>
+							<div class="last-name">
+							<label for="last-name">LAST NAME</label>
+
+							<input
+								type="text"
+								id="last-name"
+								name="last-name"
+								placeholder="Odinson" />
+								</div>
+						</div>
+					<div class="row">
+						<div class="email">
+							<label for="email">EMAIL</label>
+							<input type="text" id="email" name="email" />
+						</div>
+						<div class="phone">
+							<label for="phone-number">PHONE NUMBER</label>
+							<input type="tel" id="phone-number" name="phone-number" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="password">
+							<label for="password">PASSWORD</label>
+							<input
+								type="text"
+								id="password"
+								name="password"
+								class="error"
+								required />
+						</div>
+						<div class="confirm">
+							<label for="confirm-password">CONFIRM PASSWORD</label>
+							<input
+								type="text"
+								id="confirm-password"
+								name="password"
+								class="error"
+								required />
+						</div>
+					</div>
+					<div class="button-container">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+				<div class="footer">
+					<div>
+						Already have an account? <span><a href="">Log in</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
