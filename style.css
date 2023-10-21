@@ -1,4 +1,3 @@
-@import 'normalize.css';
 * {
 	padding: 0;
 	margin: 0;
@@ -19,16 +18,17 @@ body {
 }
 
 div.image-container {
+	border: 20px solid red;
 	opacity: 0.9;
 	margin: 0.1rem;
 	display: flex;
-	flex: 1;
-	min-width: calc(390px-2.4rem);
-	max-height: 100vh;
-	min-height: 60vh;
+	flex: 1 1;
+	min-height: 30vh;
 	background-image: url(./back2.jpg);
-	background-size:28vw 90vh;
-	background-repeat:no-repeat;
+	background-size: 100% 90vh;
+	background-repeat: no-repeat;
+	background-position: center;
+
 	/* inner styling of the image container */
 	flex-direction: column;
 	justify-content: flex-end;
@@ -40,7 +40,7 @@ div.image-container > div.logo-container {
 	width: 3rem;
 	height: 3rem;
 	background-image: url(./logo-sehar.jpg);
-	background-size:cover;
+	background-size: cover;
 	opacity: 0.7;
 	border-radius: 50%;
 	margin-left: auto;
@@ -59,22 +59,20 @@ a {
 	color: rgb(225, 191, 71);
 }
 div.main-container {
-	display: flex;
-	flex-direction: column;
+	border: 2px red solid;
 	background-color: rgba(255, 255, 255);
-	max-height: 100vh;
-	max-width: 70vw;
 	border-radius: 7px;
 	margin: 0.1rem;
-	padding:1rem;
+	padding: 1rem;
 	/* Styling inside of the main container */
 	display: flex;
 	flex-direction: column;
+	flex: 1.5 1;
+	min-height: 68vh;
 }
 .header {
 	opacity: 0.7;
-	flex-shrink: 1.2;
-	min-width: calc(390px-2.4rem);
+	width: calc(100%-1rem);
 	padding: 1.2rem;
 	background-color: rgb(215, 211, 211, 0.5);
 	font-size: 1.4rem;
@@ -86,6 +84,7 @@ div.main-container {
 .header div:nth-child(2) {
 	margin-top: 1rem;
 	color: rgb(0, 0, 0);
+	width: calc(100%-1rem);
 }
 
 .form-container {
@@ -93,8 +92,7 @@ div.main-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	flex: 1;
-	min-width: calc(390px-2.4rem);
+	min-width: 375px;
 	padding: 1.2rem;
 }
 .form-container > h3 {
@@ -104,7 +102,7 @@ div.main-container {
 .footer {
 	flex-shrink: 1.5;
 	display: flex;
-	min-width: calc(390px-2.4rem);
+	max-width: calc(100%-1rem);
 	padding: 1.2rem;
 	flex-direction: column;
 	justify-content: flex-end;
